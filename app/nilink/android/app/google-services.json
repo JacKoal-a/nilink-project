@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "201499464145",
+    "project_id": "nilink-6d0e6",
+    "storage_bucket": "nilink-6d0e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201499464145:android:1463118237c079ced3d0f0",
+        "android_client_info": {
+          "package_name": "com.nin.nilink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201499464145-b0gpln9gohm3kltgktnn8kffrmb6vqq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nin.nilink",
+            "certificate_hash": "81e0fde1d2051743bba9ee511082e260e91f8f36"
+          }
+        },
+        {
+          "client_id": "201499464145-aiaorqcl12ero5t98s1hdr4536umr96m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIQIaatE8Y3n6zPJmyQ3cvVwNPpNHVsN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201499464145-aiaorqcl12ero5t98s1hdr4536umr96m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
