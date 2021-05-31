@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="pages/myapps/myapps.css">
+<script src="pages/myapps/myapps.js"></script>
+
+<div class="button is-primary is-pulled-right" data-target="modal" aria-haspopup="true" id="create-btn">
+   <div class="is-align-items-center is-flex">
+      <i class="fas fa-plus"></i>
+      <span style="margin-left: 10px;">Create</span>
+   </div>
+</div>
+
+<button class="button" id="refresh-btn"><i class="fas fa-sync-alt"></i></i></button>
+
+<section class="section pl-0 pr-0">
+   <div class="container" style="overflow-y: scroll; max-height: 85vh">
+
+      <table class="table is-narrow is-hoverable is-fullwidth is-hoverable" >
+         <thead>
+            <tr>
+               <th>ID</th>
+               <th>&nbsp;</th>
+               <th>Name</th>
+               <th>Creation Date</th>
+            </tr>
+         </thead>
+         <tbody id="table-body">
+            
+         </tbody>
+      </table>
+   </div>
+</section>
+
+<div class="modal" id="app-form">
+   <div class="modal-background"></div>
+   <div class="modal-content">
+     <div class="card p-4 is-clearfix">
+        <div class="subtitle">Create Application</div>
+        <div class="field">
+         <div class="control is-medium ">
+           <input class="input is-primary" type="text" id="app-name" placeholder="App name">
+         </div>
+       </div>
+       <div id="msg" class="has-text-centered">
+         
+       </div>
+       <div class="button is-primary is-pulled-right is-outlined" id="create-app-btn">Create</div>
+     </div>
+   </div>
+   <button class="modal-close is-large" aria-label="close" onclick="closeModal();";></button>
+ </div>

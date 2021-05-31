@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="pages/login/login.css">
+<script src="pages/login/login.js"></script>
+
+<section class="hero has-background-white-ter is-primary is-fullheight">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+                    <div class="box p-10">
+                        <div class="has-text-centered p-2">
+                            <h1 class="subtitle has-text-black	">Dev Console</h1>
+                        </div>
+                        <div class="img-container p-2">
+                            <img src="assets/nilink.svg" width="200">
+                        </div>
+                        <form action="#" onsubmit="login();return false">
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="inputBox">
+                                    <input type="email" name="mail" id="mail" required class="m-0"
+                                        onkeyup="this.setAttribute('value', this.value);" value="">
+                                    <label>Mail</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="inputBox ">
+                                    <input type="password" name="pass" id="pass" required class="m-0"
+                                        onkeyup="this.setAttribute('value', this.value);" value="">
+                                    <label>Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="has-text-centered">
+                            <button class="button is-primary p-2" type="submit">Login</button>
+                        </div>
+
+
+                    </form>
+
+                        
+                        <div class="has-text-grey or"><span>OR</span></div>
+
+                        <meta name="google-signin-client_id" content="201499464145-reh3kjqkqnuka9342f624ca1pve736l5.apps.googleusercontent.com">
+	                    <script src="https://apis.google.com/js/platform.js"></script>
+
+                        <div class="has-text-centered">
+                            <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

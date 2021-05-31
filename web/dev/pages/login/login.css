@@ -1,0 +1,119 @@
+.g-signin2{
+    width: 100%;
+}
+  
+.g-signin2 > div{
+    margin: 0 auto;
+}
+
+
+.or {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #c6c6c6 ; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    margin-top:20px;
+    margin-bottom:20px;
+ } 
+ 
+.or span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+.img-container  {
+    text-align: center;
+}
+.inputBox {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+
+}
+
+.inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: var(--teal);
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.inputBox input:focus {
+    outline: none;
+    border: 2px solid var(--teal);
+}
+input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--teal);
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #2b8080;
+    -webkit-box-shadow: 0 1px 1px 0 #00808073, 0 1px 3px 1px #0080804d;
+    box-shadow: 0 1px 1px 0 #00808073, 0 1px 3px 1px #0080804d;
+} 
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: var(--teal);
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.inputBox input:focus {
+    outline: none;
+    border: 2px solid var(--teal);
+}
+
+form{
+    padding: 16px;
+}
+
+
+.flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -12px 0 0 -12px;
+    width: calc(100% + 12px);
+}
