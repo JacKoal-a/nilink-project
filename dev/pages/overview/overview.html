@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="pages/overview/overview.css">
+<script src="pages/overview/overview.js"></script>
+
+
+<div class="button" id="back-btn" onclick="Route.myapps();"><i class="fas fa-arrow-left"></i></div>
+
+<div class="button is-primary is-pulled-right" id="edit-btn">
+    <div class="is-align-items-center is-flex">
+        <i class="fas fa-pen"></i>
+        <span style="margin-left: 10px;">Edit</span>
+    </div>
+</div>
+
+
+<section class="section pl-0 pr-0" >
+    <div class="container is-flex">
+        <figure class="image is-128x128 m-2">
+            <img id="app-icon" >
+        </figure>
+
+        <div class="m-2">
+            <p class="title" id="app-name">title</p>
+            <p class="subtitle" id="developer">developer</p>
+        </div>
+    </div>
+    <div class="tabs is-centered is-boxed mt-3" id="tabs">
+        <ul>
+            <li id="li-overview" onclick="changeTab('overview');" class="is-active" >
+                <a>
+                    <span class="icon is-small"><i class="fas fa-eye" aria-hidden="true"></i></span>
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li id="li-credentials" onclick="changeTab('credentials');">
+                <a>
+                    <span class="icon is-small"><i class="fas fa-lock" aria-hidden="true"></i></span>
+                    <span>Credentials</span>
+                </a>
+            </li>
+            <li id="li-options" onclick="changeTab('options');">
+                <a>
+                    <span class="icon is-small"><i class="fas fa-cog" aria-hidden="true"></i></span>
+                    <span>Options</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content container" id="overview">
+        <div class="container is-flex" style="overflow-x: scroll; height: 300px;" id="images">
+        </div>
+        <br>
+        <p class="subtitle">Description</p>
+        <div id="description"></div>
+
+    </div>
+    <div class="content container is-hidden" id="credentials">
+
+        <p class="title">OAuth Credentials</p>
+
+        <p class="subtitle">Client ID</p>
+        <div class="is-flex is-vcentered">
+            <pre id="client_id"></pre>
+            <button class="button m-2 mt-3" id="back-btn" onclick="copyToClipboard('client_id');"><i class="far fa-clone"></i></button>
+            
+        </div>
+        <br>
+        <p class="subtitle">Client Secret</p>
+        <div class="is-flex is-vcentered">
+            <pre id="client_secret"></pre>
+            <button class="button m-2 mt-3" id="back-btn" onclick="copyToClipboard('client_secret');"><i class="far fa-clone is-link"></i></button>
+        </div>
+        
+        
+        
+    </div>
+    <div class="content container is-hidden" id="options">
+        <button class="button is-danger" id="delete-btn">Delete</button>
+        
+        
+        
+    </div>
+
+</section>

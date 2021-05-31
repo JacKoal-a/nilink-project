@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="pages/home/home.css">
+<script src="pages/home/home.js"></script>
+
+<div id="app">
+    <nav class="navbar has-shadow">
+        <div class="container " style="display: flex;">
+            <a id="burger" class="navbar-burger is-hidden-tablet left-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+            <div class="navbar-brand  ">
+                <a class="navbar-item" href="/">
+                    <img src="assets/nilink_text.svg" width="100px" height="100%" class="is-shadowless">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero is-fullheight is-hidden-tablet is is-hidden" id="menu-mobile">
+        <div class="column is-3 is-sidebar-menu has-background-dark is-fullheight "
+            style="border-right: 2px solid whitesmoke; min-height: 100vh;">
+            <aside class="menu p-3 ">
+
+                <p class="menu-label has-text-white">
+                    Applications
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.myapps()">My Apps</a></li>
+                    <li><a onclick="Route.dashboard()">Dashboard</a></li>
+                </ul>
+                <p class="menu-label has-text-white">
+                    Documentation
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.oauth()">OAuth</a></li>
+                    <li><a onclick="Route.api_apps()">Application API</a></li>
+                    <li><a onclick="Route.api_lobby()">Lobby API</a></li>
+                </ul>
+                <p class="menu-label has-text-white">
+                    Settings
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.profile()">Profile</a></li>
+                    <li><a onclick="">Advertisement</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <div class="is-flex  is-fullheight" style="margin-top: 0;  height: 100vh;">
+        <div class="column is-3 is-sidebar-menu has-background-dark is-hidden-mobile"
+            style="border-right: 2px solid whitesmoke;">
+            <aside class="menu p-3">
+
+                <p class="menu-label has-text-white">
+                    Applications
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.dashboard()">Dashboard</a></li>
+                    <li><a onclick="Route.myapps()">My Apps</a></li>
+                </ul>
+                <p class="menu-label has-text-white">
+                    Documentation
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.oauth()">OAuth</a></li>
+                    <li><a onclick="Route.api_apps()">Application API</a></li>
+                    <li><a onclick="Route.api_lobby()">Lobby API</a></li>
+                </ul>
+                <p class="menu-label has-text-white">
+                    Settings
+                </p>
+                <ul class="menu-list">
+                    <li><a onclick="Route.profile()">Profile</a></li>
+                    <li><a onclick="">Advertisement</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-main-content" id="content" style="overflow-y: scroll; height: 100vh;">
+            content
+        </div>
+    </div>
+
+</div>

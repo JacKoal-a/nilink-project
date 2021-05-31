@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+  #menu-toggle:checked + .nav-menu {
+    display: block;
+  }
+}
+
+
+.navbar-brand.left-burger {
+  align-items: flex-start;
+}
+
+.navbar-burger {
+  margin-left: 0 !important;
+}
+
+.nav-right{
+  margin-left: auto !important;
+}
+
+.menu-list li a{
+  color: white;
+}
+
+.navbar-item img {
+  max-height: none !important;
+}
