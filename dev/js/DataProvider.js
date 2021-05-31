@@ -24,7 +24,7 @@ class DataProvider{
           body: data
         });
         var res=await response.json(); 
-        if(response.status==401){
+        if(response.status==401 && token!=''){
           var result = await Auth.tryLogin();
           if(result){
             return await this.post(url,Auth.token,data);
